@@ -1,0 +1,187 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.app-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.index-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+}
+
+.index-content .upper-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 70px;
+}
+
+.index-content .upper-content .app-title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.index-content .upper-content .app-title-container .app-icon-container {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-content .upper-content .game-link-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.index-content .upper-content .game-link-list li {
+    margin: 10px;
+    text-align: right;
+}
+
+.index-content .upper-content .game-link-list li a {
+    transition: all 0.3s ease-in-out;
+    font-family: var(--text-font);
+    color: var(--text);
+    font-size: 45px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+}
+
+.index-content .lower-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 40px;
+}
+
+.index-content .lower-content #copyRight {
+    color: var(--text);
+    font-family: arial;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.index-content .lower-content .pg-language-list {
+    padding: 0;
+    list-style-type: none;
+}
+
+.index-content .lower-content .pg-language-list li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.index-content .lower-content .pg-language-list li a {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.index-content .lower-content .pg-language-list li:nth-child(1) a {
+    text-decoration: none;
+    color: #eb432d;
+}
+
+.index-content .lower-content .pg-language-list li:nth-child(2) a {
+    text-decoration: none;
+    color: #146de2;
+}
+
+.index-content .lower-content .pg-language-list li:nth-child(3) a {
+    text-decoration: none;
+    color: #ffee00;
+}
+
+/* Player Name Modal */
+.modal-area {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.modal-area .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+}
+
+.modal-area .row h1 {
+    font-family: var(--title-font);
+    letter-spacing: 5px;
+    margin: 30px 0 20px;
+}
+
+.modal-area .row p {
+    font-family: var(--normal-font);
+    font-size: 15px;
+}
+
+.modal-area .row input[type=text] {
+    padding: 5px;
+    font-size: 18px;
+    margin: 10px;
+    width: 100%;
+    outline: none;
+}
+
+.modal-area .row button {
+    width: 100%;
+    padding: 7px;
+    font-family: var(--normal-font);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}

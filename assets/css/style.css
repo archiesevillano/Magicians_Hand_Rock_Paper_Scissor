@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'magic';
+    src: url(../fonts/firstorder.ttf);
+}
+
+@font-face {
+    font-family: 'script';
+    src: url(../fonts/halfelven.ttf);
+}
+
+@font-face {
+    font-family: 'epic';
+    src: url(../fonts/Carnevalee\ Freakshow.ttf);
+}
+
+@font-face {
+    font-family: 'dragon';
+    src: url(../fonts//DragonHunter-9Ynxj.otf);
+}
+
+@font-face {
+    font-family: 'ancient';
+    src: url(../fonts/Warungasem-rgO1O.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+    --text: #f8f0f0;
+    --title-font: 'dragon', courier;
+    --text-font: 'ancient', courier;
+    --normal-font: 'Poppins', sans-serif;
+    --bg-img: url(../objects/backgrounds/dark_forest.png);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: var(--bg-img);
+    background-size: 100% 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.app-title {
+    color: var(--text);
+    font-family: var(--title-font);
+    font-size: 70px;
+    letter-spacing: 5px;
+    margin-left: 20px;
+    font-weight: normal;
+    display: inline-block;
+}

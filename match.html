@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Match - Magician's Hand</title>
+    <link rel="icon" href="assets/objects/logo/logo.svg">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/match.css">
+    <script defer src="https://kit.fontawesome.com/bbbef04b10.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="match-header">
+        <div class="col1">
+            <div class="health-bar">
+                <div class="health player1-hb"></div>
+            </div>
+            <p class="character-name">Rogue Wizard</p>
+            <p class="player-name">Player 1</p>
+        </div>
+        <div class="match-count">
+            <div class="sound-options">
+                <a class="sound-option-btn background-music">
+                    <i class="fa-solid fa-music"></i>
+                </a>
+            </div>
+            <div class="sound-options">
+                <a class="sound-option-btn sound-effects">
+                    <i class="fa-solid fa-volume-high"></i>
+                </a>
+            </div>
+            <div class="match-count-container">
+                <div class="image-container">
+                    <img src="assets/objects/logo/logo.svg" class="logo">
+                </div>
+                <div class="match-rounds">
+                    <p><span class="current-round">0</span>/ <span class="max-round">0</span></p>
+                    <span>Match</span>
+                </div>
+            </div>
+            <div class="user-options">
+                <a class="user-option-btn settings">
+                    <i class="fa-solid fa-gear"></i>
+                </a>
+            </div>
+            <div class="user-options">
+                <a class="user-option-btn exit">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col2">
+            <div class="health-bar">
+                <div class="health player2-hb"></div>
+            </div>
+            <p class="character-name">Demon Summoner</p>
+            <p class="player-name">Player 2</p>
+        </div>
+    </header>
+    <aside class="player1-skills">
+        <ul class="skill-list">
+            <li>
+                <a data-pick-type="scissor">
+                    <img src="assets/objects/skills/scissor.png" class="p1-skill">
+                </a>
+            </li>
+            <li>
+                <a data-pick-type="rock">
+                    <img src="assets/objects/skills/rock.png" class="p1-skill">
+                </a>
+            </li>
+            <li>
+                <a data-pick-type="paper">
+                    <img src="assets/objects/skills/paper.png" class="p1-skill">
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <aside class="player2-skills">
+        <ul class="skill-list">
+            <li>
+                <a data-pick-type="scissor">
+                    <img src="assets/objects/skills/scissor.png">
+                </a>
+            </li>
+            <li>
+                <a data-pick-type="rock">
+                    <img src="assets/objects/skills/rock.png">
+                </a>
+            </li>
+            <li>
+                <a data-pick-type="paper">
+                    <img src="assets/objects/skills/paper.png">
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <main class="arena">
+        <div class="player1-side side">
+            <img src="assets/objects/character/rouge_wizard.gif" class="player1 players">
+        </div>
+        <div class="versus-container">
+            <div class="player1-skill-container">
+                <img class="player1-selected-skill" draggable="false" src="assets/objects/skills/paper_borderless.png">
+            </div>
+            <h1 class="versus-text">
+                V.S
+            </h1>
+            <div class="player2-skill-container">
+                <img class="player2-selected-skill" draggable="false" src="assets/objects/skills/rock_borderless.png">
+            </div>
+            <h1 class="miss-text">
+                Miss
+            </h1>
+        </div>
+        <div class="player2-side side">
+            <img src="assets/objects/character/demon_summoner.gif" class="player2 players">
+        </div>
+    </main>
+    <footer class="match-footer">
+
+        <div class="player1-match-info">
+            <div class="character-profile-container">
+                <img src="assets/objects/character/profiles/1.jpg" class="character-profiles">
+            </div>
+            <div class="match-stats">
+                <p>Win: <span class="p1-match-wins">0</span></p>
+                <p>Lose: <span class="p1-match-lose">0</span></p>
+            </div>
+        </div>
+
+        <div class="view-match-details">
+            <i class="fa-solid fa-eye"></i>
+            <p>View Match Details</p>
+        </div>
+
+        <div class="player2-match-info">
+            <div class="character-profile-container">
+                <img src="assets/objects/character/profiles/Algadon Wizard logo.jpg" class="character-profiles">
+            </div>
+            <div class="match-stats">
+                <p>Win: <span class="p2-match-wins">0</span></p>
+                <p>Lose: <span class="p2-match-lose">0</span></p>
+            </div>
+        </div>
+
+    </footer>
+
+    <div class="match-details-container">
+        <header class="match-header-details">
+            <div class="col1">
+                <div class="icon-container">
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+                <div class="header-text">
+                    <h1>Match Details</h1>
+                    <small>Match History</small>
+                </div>
+            </div>
+            <h3>
+                Match_ID - <span class="matchID">254521231</span>
+            </h3>
+            <div class="col2">
+                <a class="cls-match-history-btn">CLOSE</a>
+            </div>
+        </header>
+        <main class="match-detail-content">
+            <div class="main-list">
+                <table class="match-data-table">
+                    <thead>
+                        <th>Player 1</th>
+                        <th>Player 2</th>
+                        <th>P1 vs. P2</th>
+                        <th>Winner Inflicted Dmg.</th>
+                    </thead>
+                    <tbody id="match-history-records">
+                        <tr id="placeholder-record" style="font-size:12px;opacity:0.4;">
+                            <td>No records yet</td>
+                            <td>No records yet</td>
+                            <td>No records yet</td>
+                            <td>No records yet</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="players-stat">
+                <div class="player1-status p-stat">
+                    <h3>Player 1</h3>
+                    <div class="inner">
+                        <div class="stats-label">
+                            <p>Landed Attacks</p>
+                            <p>Missed Attacks</p>
+                            <p>Total Attacks</p>
+                        </div>
+                        <div class="stats-scores">
+                            <p class="player1-la-value">0</p>
+                            <p class="player1-ma-value">0</p>
+                            <p class="player1-total-value">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="player2-status p-stat">
+                    <h3>Player 2</h3>
+                    <div class="inner">
+                        <div class="stats-label">
+                            <p>Landed Attacks</p>
+                            <p>Missed Attacks</p>
+                            <p>Total Attacks</p>
+                        </div>
+                        <div class="stats-scores">
+                            <p class="player2-la-value">0</p>
+                            <p class="player2-ma-value">0</p>
+                            <p class="player2-total-value">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="loader-container">
+        <div class="content">
+            <div class="loader">
+            </div>
+            <div class="skull-container">
+                <img src="assets/objects/extras/skull.png" class="loader-image">
+            </div>
+        </div>
+        <p>Please wait...</p>
+    </div>
+
+    <script type="module" src="assets/scripts/match.js"></script>
+</body>
+
+</html>
